@@ -63,3 +63,29 @@ p {
     font-size: 2.4rem;
   }
 }
+
+/* Links */
+a {
+  text-decoration: none;
+}
+.arrowLink {
+  color: var(--accentColor);
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: bold;
+}
+.arrowLink::after {
+  content: "-->";
+  margin-left: 5px;
+  transition: margin 0.15s;
+}
+
+.arrowLink:hover::after {
+  margin-left: 10px;
+}
+
+@media screen and (min-width: 1024px) {
+  .arrowLink {
+    font-size: 1.5rem;
+  }
+}
