@@ -122,3 +122,31 @@ a {
     font-size: 1.2rem;
   }
 }
+
+/* Lists */
+.list {
+  list-style: none;
+  padding-left: 0;
+  color: var(--headingColor);
+}
+
+.list--inline .list__item {
+  display: inline-block;
+}
+
+.list--bold {
+  font-weight: bold;
+}
+
+.list--tick {
+  padding-left: 3rem;
+  list-style: url("../images/tick.svg");
+}
+
+.list--tick .list__item {
+  padding-left: 0.5rem;
+}
+
+li {
+  padding: 1rem;
+}
