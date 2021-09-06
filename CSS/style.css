@@ -16,7 +16,6 @@ body {
   color: var(--bodyTextColor);
   font-size: 2.4rem;
   line-height: 1.5rem;
-  margin-left: 16px;
 }
 
 /*Font sizing and text formating*/
@@ -170,4 +169,92 @@ li {
   height: 64px;
   justify-content: center;
   width: 64px;
+}
+
+/* buttons */
+.btn {
+  border-radius: 40px;
+  display: flex;
+  font-size: 1.8rem;
+  font-weight: bold;
+  justify-content: center;
+  text-transform: uppercase;
+  padding: 25px 75px;
+  border: 0;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.fixed_button {
+  align-self: center;
+  justify-self: center;
+  margin: 25px 25px;
+}
+
+.btn_fill {
+  margin: 10% 5%;
+}
+
+.btn_accent {
+  background-color: var(--accentColor);
+  border: 1px solid var(--accentColor);
+  color: white;
+  transition: hover 1s;
+}
+
+.btn_accent:hover {
+  background-color: #fd4516;
+  color: white;
+}
+
+.btn_heading {
+  background-color: var(--headingColor);
+  color: white;
+  transition: hover 0.2s;
+}
+.btn_heading:hover {
+  color: var(--headingColor);
+  background-color: white;
+  border: 2px solid var(--headingColor);
+}
+
+.btn_secondary {
+  background-color: var(--secondaryColor);
+  color: white;
+  transition: hover 0.2s;
+}
+
+.btn_secondary:hover {
+  color: var(--secondaryColor);
+  background-color: white;
+  border: 2px solid var(--secondaryColor);
+}
+
+.btn_outline_headingcolor {
+  background-color: white;
+  color: var(--headingColor);
+  border: 2px solid var(--headingColor);
+}
+
+.btn_outline_headingcolor:hover {
+  background-color: var(--headingColor);
+  color: white;
+}
+
+.btn_small {
+  padding: 0.75rem 1.5rem;
+  font-size: 2rem;
+  color: var(--headingColor);
+  border: 0;
+  background: white;
+}
+.btn_small:hover {
+  background-color: var(--secondaryColor);
+  border: 1px solid var(--secondaryColor);
+  color: white;
+}
+.btn_small:hover {
+  background-color: var(--secondaryColor);
+  border: 1px solid var(--secondaryColor);
+  color: white;
 }
