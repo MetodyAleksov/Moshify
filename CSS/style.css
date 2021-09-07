@@ -203,7 +203,7 @@ li {
 }
 
 .btn_accent:hover {
-  background-color: #fd4516;
+  background-color: #ec3000;
   color: white;
 }
 
@@ -258,3 +258,5 @@ li {
   border: 1px solid var(--secondaryColor);
   color: white;
 }
+
+/*Something not yet done*/
