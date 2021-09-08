@@ -7,6 +7,12 @@
   --bodyTextColor: #918ca4;
 }
 
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
 html {
   font-size: 62.5%;
 }
@@ -259,4 +265,27 @@ li {
   color: white;
 }
 
-/*Something not yet done*/
+@media screen and (min-width: 1024px) {
+  .btn {
+    font-size: 1.5rem;
+  }
+}
+
+/*Inputs*/
+.input {
+  border-radius: 40px;
+  border: 1px solid #ccc;
+  color: var(--headingColor);
+  font-size: 2rem;
+  outline: 0;
+  padding: 1.5rem 2.5rem;
+}
+.input::placeholder {
+  color: #cdcbc7;
+}
+
+@media screen and (min-width: 1024px) {
+  .input {
+    font-size: 1.5rem;
+  }
+}
