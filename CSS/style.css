@@ -180,7 +180,7 @@ li {
 /* buttons */
 .btn {
   border-radius: 40px;
-  display: flex;
+  display: inline-block;
   font-size: 1.8rem;
   font-weight: bold;
   justify-content: center;
@@ -265,6 +265,10 @@ li {
   color: white;
 }
 
+.btn__search {
+  padding: 1.5rem 2rem;
+}
+
 @media screen and (min-width: 1024px) {
   .btn {
     font-size: 1.5rem;
@@ -282,6 +286,22 @@ li {
 }
 .input::placeholder {
   color: #cdcbc7;
+}
+
+.input-group {
+  display: flex;
+  border: 1px solid #ccc;
+  border-radius: 30px;
+}
+
+.input-group .input {
+  border: 0;
+  flex-grow: 1;
+  padding: 1.5rem 1rem;
+}
+
+.input-group .btn {
+  margin: 4px;
 }
 
 @media screen and (min-width: 1024px) {
