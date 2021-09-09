@@ -309,3 +309,24 @@ li {
     font-size: 1.5rem;
   }
 }
+
+/*CArd*/
+.card {
+  overflow: hidden;
+  border-radius: 7px;
+  box-shadow: 0 0 20px 10px #f3f3f3ea;
+}
+
+.card__header,
+.card__body {
+  padding: 2rem 3rem;
+}
+
+.card--primary .card__header {
+  background-color: var(--primaryColor);
+  color: white;
+}
+.card--secondary .card__header {
+  background-color: var(--secondaryColor);
+  color: white;
+}
