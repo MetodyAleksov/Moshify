@@ -180,96 +180,60 @@ li {
 
 /* buttons */
 .btn {
-  border-radius: 40px;
-  display: inline-block;
-  font-size: 1.8rem;
-  font-weight: bold;
-  justify-self: center;
   align-self: center;
-  justify-content: center;
-  text-transform: uppercase;
-  padding: 20px 70px;
+  border-radius: 40px;
   border: 0;
   cursor: pointer;
+  display: inline-block;
+  font-size: 1.8rem;
+  font-weight: 600;
+  padding: 2rem 3rem;
+  text-transform: uppercase;
   white-space: nowrap;
+  text-align: center;
 }
 
-.fixed_button {
-  align-self: center;
-  justify-self: center;
-  margin: 25px 25px;
-}
-
-.btn_fill {
-  margin: 10% 5%;
-}
-
-.btn_accent {
-  background-color: var(--accentColor);
-  border: 1px solid var(--accentColor);
-  color: white;
-  transition: hover 1s;
-}
-
-.btn_accent:hover {
-  background-color: #ec3000;
+.btn--primary {
+  background: var(--primaryColor);
   color: white;
 }
 
-.btn_heading {
-  background-color: var(--headingColor);
-  color: white;
-  transition: hover 0.2s;
-}
-.btn_heading:hover {
-  color: var(--headingColor);
-  background-color: white;
-  border: 2px solid var(--headingColor);
+.btn--primary:hover {
+  background: #3a8ffd;
 }
 
-.btn_secondary {
+.btn--secondary {
   background-color: var(--secondaryColor);
   color: white;
-  transition: hover 0.2s;
 }
 
-.btn_secondary:hover {
-  color: var(--secondaryColor);
-  background-color: white;
-  border: 2px solid var(--secondaryColor);
+.btn--secondary:hover {
+  background: #00c8eb;
 }
 
-.btn_outline_headingcolor {
-  background-color: white;
-  color: var(--headingColor);
-  border: 2px solid var(--headingColor);
-}
-
-.btn_outline_headingcolor:hover {
-  background-color: var(--headingColor);
+.btn--accent {
+  background: var(--accentColor);
   color: white;
 }
 
-.btn_small {
-  padding: 0.75rem 1.5rem;
-  font-size: 2rem;
-  color: var(--headingColor);
-  border: 0;
+.btn--accent:hover {
+  background: #ec3000;
+}
+
+.btn--block {
+  width: 100%;
+  display: inline-block;
+}
+
+.btn--outline {
   background: white;
-}
-.btn_small:hover {
-  background-color: var(--secondaryColor);
-  border: 1px solid var(--secondaryColor);
-  color: white;
-}
-.btn_small:hover {
-  background-color: var(--secondaryColor);
-  border: 1px solid var(--secondaryColor);
-  color: white;
+  color: var(--headingColor);
+  border: 2px solid var(--headingColor);
 }
 
-.btn__search {
-  padding: 1.5rem 2rem;
+.btn--outline:hover {
+  background: var(--headingColor);
+  color: white;
 }
 
 @media screen and (min-width: 1024px) {
@@ -369,6 +333,7 @@ li {
 }
 
 .plan__description {
+  display: block;
   margin-top: 10px;
   font-size: 2rem;
   font-weight: 300;
@@ -378,4 +343,19 @@ li {
 
 .plan .list__item {
   margin-bottom: 2rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .plan__name {
+    font-size: 1.4rem;
+  }
+  .span__price {
+    font-size: 5rem;
+  }
+  .span__billing-cycle {
+    font-size: 1.6rem;
+  }
+  .plan__description {
+    font-size: 1.7rem;
+  }
 }
