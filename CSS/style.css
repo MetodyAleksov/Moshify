@@ -373,4 +373,20 @@ li {
   }
 }
 
-/**/
+/*Media Object*/
+.media {
+  display: flex;
+}
+
+.media__title {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.media__body {
+  margin: 0 2rem;
+}
+
+.media__image {
+  padding: 1rem 15px 0px;
+}
