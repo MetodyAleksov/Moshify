@@ -168,6 +168,10 @@ li {
   fill: var(--primaryColor);
 }
 
+.icon--white {
+  fill: white;
+}
+
 .icon-container {
   align-items: center;
   background: #f3f9fa;
@@ -176,6 +180,10 @@ li {
   height: 64px;
   justify-content: center;
   width: 64px;
+}
+
+.icon-container--accent {
+  background-color: var(--accentColor);
 }
 
 /* buttons */
@@ -443,4 +451,19 @@ li {
   .grid--1x2 {
     grid-template-columns: 1fr 1fr;
   }
+}
+/*Testemonial*/
+.testimonial {
+  padding: 3rem;
+}
+.testimonial__image {
+  position: relative;
+}
+.testimonial__image > img {
+  width: 100%;
+}
+.testimonial__image > .icon-container {
+  position: absolute;
+  top: 3rem;
+  right: -32px;
 }
