@@ -172,6 +172,11 @@ li {
   fill: white;
 }
 
+.icon--small {
+  width: 30px;
+  height: 30px;
+}
+
 .icon-container {
   align-items: center;
   background: #f3f9fa;
@@ -432,7 +437,7 @@ li {
 
 @media screen and (min-width: 1024px) {
   .quote {
-    font-size: 2rem;
+    font-size: 3rem;
   }
   .quote__name {
     font-size: 2rem;
@@ -466,4 +471,12 @@ li {
   position: absolute;
   top: 3rem;
   right: -32px;
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .testimonial .quote {
+    font-size: 2.4rem;
+  }
+  .testimonial .quote__name {
+    font-size: 2.4rem;
+  }
 }
