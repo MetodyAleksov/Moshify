@@ -30,7 +30,7 @@ h2,
 h3 {
   color: var(--headingColor);
   font-weight: bold;
-  line-height: 3rem;
+  line-height: 8rem;
 }
 
 h1 {
@@ -558,6 +558,7 @@ li {
 
 .block__heading {
   margin-top: 0;
+  margin-bottom: 0;
 }
 
 .block--dark {
@@ -581,6 +582,12 @@ li {
 .container {
   max-width: 1140px;
   margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+  .block__header {
+    text-align: left;
+  }
 }
 
 /* Nav bar */
@@ -641,5 +648,31 @@ li {
 
   .nav__item {
     border: 0;
+  }
+}
+
+/* Hero */
+.hero {
+  padding-bottom: calc(var(--padding-vertical) + 4rem);
+  clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+}
+
+.hero__tagline {
+  font-size: 2rem;
+  color: #b9c3cf;
+  letter-spacing: 1px;
+  margin: 2rem 0 5rem;
+}
+
+.hero__image {
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    padding-top: 0;
+  }
+  .hero__content {
+    align-self: center;
   }
 }
