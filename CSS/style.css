@@ -321,11 +321,17 @@ li {
 .card--secondary .badge--secondary {
   background-color: #02cdf1;
 }
-
+.card--primary .badge--primary {
+  background-color: #126de4;
+}
 /*Plan*/
 
 .plan {
   line-height: 2.5rem;
+  transition: transform 0.15s ease-out;
+}
+.plan:hover {
+  transform: scale(1.05);
 }
 
 .card__header {
@@ -390,6 +396,12 @@ li {
   }
   .plan__description {
     font-size: 1.7rem;
+  }
+  .plan--popular {
+    transform: scale(1.1);
+  }
+  .plan--popular:hover {
+    transform: scale(1.15);
   }
 }
 
@@ -462,6 +474,15 @@ li {
 @media screen and (min-width: 768px) {
   .grid--1x2 {
     grid-template-columns: 1fr 1fr;
+  }
+  .grid--1x3 {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media screen and (min-width: 1028px) {
+  .grid--1x3 {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 /*Testemonial*/
@@ -709,4 +730,15 @@ li {
   .block-domain__prices {
     grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
   }
+}
+
+/* Plans Block */
+
+.block-plans .grid {
+  gap: 8rem 4rem;
+}
+
+.block-plans .card {
+  max-width: 500px;
+  margin: 0 auto;
 }
